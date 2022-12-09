@@ -24,7 +24,7 @@ export default function City(props) {
   }, [id]);
 
 
-  const mainBg = {uri: 'https://wallpapercave.com/wp/wp1809587.jpg'}
+  const mainBg = {uri: 'https://d3t4nwcgmfrp9x.cloudfront.net/upload/top-10-viajes-empresa.jpg'}
   return (
     <ImageBackground source={mainBg} resizeMode="cover" style={{width: '100%', height: '100%'}}>
         <ScrollView style={style.cityMain}>

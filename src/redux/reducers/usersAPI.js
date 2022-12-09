@@ -16,14 +16,14 @@ export const usersAPI = createApi({
     }),
     userSignIn: builder.mutation({
       query: (user) => ({
-        url: "/api/signin",
-        method: "POST",
+        url: "/api/auth/sign-in", 
+        method: "PATCH",
         body: user,
       }),
     }),
     userSignOut: builder.mutation({
       query: ({ user, token }) => ({
-        url: "/auth/signout",
+        url: "/api/auth/sign-out",
         method: "POST",
         body: user,
         headers: { Authorization: "Bearer " + token },
@@ -31,12 +31,12 @@ export const usersAPI = createApi({
     }),
     verifyToken: builder.mutation({
       query: (token) => ({
-        url: "/auth/token",
+        url: "/api/token",
         headers: { Authorization: "Bearer " + token },
       }),
     }),
     getUser: builder.query({
-      query: (id) => `/auth/${id}`,
+      query: (id) => `/api/${id}`,
     }),
   }),
 });

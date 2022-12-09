@@ -1,7 +1,8 @@
 import React from 'react'
+import { Text } from 'react-native'
 
 export default function MyTineraries() {
   return (
-    <div>MyTineraries</div>
+    <Text> Here will be our Itineraries ♥</Text>
   )
 }

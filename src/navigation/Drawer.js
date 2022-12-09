@@ -10,7 +10,9 @@ import Cities from "../screens/Cities";
 import DrawerContent from "./DrawerContent";
 import SignIn from "../screens/SignIn";
 import SignUp from "../screens/SignUp";
+import StackMyTineraries from "./StackMyTineraries";
 const DrawerNavigation = createDrawerNavigator();
+
 
 export default function Drawer() {
   const loggedIn = useSelector((state) => state.user.logged);
