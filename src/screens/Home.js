@@ -7,7 +7,6 @@ import { useGetAllContinentQuery } from "../redux/reducers/citiesAPI";
 
 export default function Home({ navigation }) {
   let {data: cities} = useGetAllContinentQuery();
-console.log(cities)
 
   return (
     <ImageBackground
@@ -20,7 +19,7 @@ console.log(cities)
       <SafeAreaView>
         <ScrollView>
           <Hero navigation={navigation} />
-          <Carousel  />
+          <Carousel data={cities} />
         </ScrollView>
       </SafeAreaView>
     </ImageBackground>

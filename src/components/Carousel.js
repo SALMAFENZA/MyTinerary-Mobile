@@ -11,13 +11,13 @@ import {
 import { ActivityIndicator } from "react-native";
 
 export default function Carousel(props) {
-  console.log(props)
+
   const dimension = Dimensions.get("window");
   const [selectedIndex, setSelectedIndex] = useState(0);
   let [start, setStart] = useState(0);
   let range = 4;
 
-  let citiesF = props.data;
+  let citiesF = props.city;
   let cities = citiesF?.slice(0, 12);
 
   let [end, setEnd] = useState(start + range);
@@ -56,8 +56,8 @@ export default function Carousel(props) {
               }}
               PlaceholderContent={<ActivityIndicator />}
             >
-              <Text style={styles.city}>{value.city}</Text>
-              <Text style={styles.country}>{value.country}</Text>
+              <Text style={styles.city}>{value.name}</Text>
+              <Text style={styles.country}>{value.continent}</Text>
             </ImageBackground>
           </View>
         ))}

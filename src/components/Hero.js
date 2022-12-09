@@ -9,8 +9,6 @@ const image = {
 };
 
 export default function Hero({ navigation }) {
-  let { data : cities } = useGetAllContinentQuery()
-  console.log(cities)
   return (
     <View>
         <Text style={styles.titleText}>My tinerary ♥ </Text>
