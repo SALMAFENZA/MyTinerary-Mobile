@@ -1,7 +1,8 @@
 import React from 'react'
+import { Text } from 'react-native'
 
 export default function SignUp() {
   return (
-    <div>SignUp</div>
+    <Text>SignUp</Text>
   )
 }
