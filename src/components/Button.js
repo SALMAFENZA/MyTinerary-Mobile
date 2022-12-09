@@ -23,7 +23,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 32,
     borderRadius: 4,
     elevation: 3,
-    backgroundColor: '#1E212D',
+    backgroundColor: '#EF50B7',
     width: '50%',
     borderRadius: 12
 },
@@ -32,6 +32,6 @@ const styles = StyleSheet.create({
     lineHeight: 21,
     fontWeight: 'bold',
     letterSpacing: 0.25,
-    color: '#FAF3E0',
+    color: '#DFDFDF',
 },
 });

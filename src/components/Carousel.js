@@ -14,15 +14,7 @@ export default function Carousel(props) {
 
   const dimension = Dimensions.get("window");
   const [selectedIndex, setSelectedIndex] = useState(0);
-  let [start, setStart] = useState(0);
-  let range = 4;
-
-  let citiesF = props.city;
-  let cities = citiesF?.slice(0, 12);
-
-  let [end, setEnd] = useState(start + range);
-  const interval = 5 * 1000;
-  const [intervalId, setIntervalId] = useState(null);
+  let cities = props.data?.city;
 
   const setIndex = (event) => {
     let viewSize = event.nativeEvent.layoutMeasurement.width;
@@ -32,7 +24,7 @@ export default function Carousel(props) {
   };
 
   return (
-    <View style={{ width: "100%", marginTop: 40, marginBottom: 40 }}>
+    <View style={{ width: "100%", marginTop: 150, marginBottom: 40 }}>
       <ScrollView
         style={{ height: 400, width: "100%" }}
         horizontal
@@ -57,7 +49,7 @@ export default function Carousel(props) {
               PlaceholderContent={<ActivityIndicator />}
             >
               <Text style={styles.city}>{value.name}</Text>
-              <Text style={styles.country}>{value.continent}</Text>
+              <Text style={styles.continent}>{value.continent}</Text>
             </ImageBackground>
           </View>
         ))}
@@ -98,7 +90,7 @@ const styles = StyleSheet.create({
     textShadowOffset: { width: -1, height: 1 },
     textShadowRadius: 10,
   },
-  country: {
+  continent: {
     textAlign: "center",
     color: "white",
     fontSize: 18,
