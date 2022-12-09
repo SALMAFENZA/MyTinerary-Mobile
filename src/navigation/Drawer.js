@@ -20,24 +20,24 @@ export default function Drawer() {
       drawerContent={(props) => <DrawerContent {...props} />}
       screenOptions={{
         drawerStyle: {
-          backgroundColor: "#1E212D",
+          backgroundColor: "#FA5EEF",
         },
         drawerItemStyle: {
-          backgroundColor: "#FAF3E0",
+          backgroundColor: "#FACBAE",
           borderRadius: 5,
         },
         headerStyle: {
-          backgroundColor: "#1E212D",
+          backgroundColor: "#FA5EEF",
         },
         headerTitleStyle: {
-          color: "#FAF3E0",
+          color: "#FBE5E5",
         },
         drawerLabelStyle: {
-          color: "#1E212D",
+          color: "#5C1313",
           fontStyle: "italic",
           fontWeight: "bold",
         },
-        headerTintColor: "#FAF3E0",
+        headerTintColor: "#FBE5E5",
       }}
     >
       <DrawerNavigation.Screen name="Home" component={Home} />

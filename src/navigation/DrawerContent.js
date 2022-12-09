@@ -53,7 +53,7 @@ export default function DrawerContent(props) {
             <DrawerItemList {...filteredProps} />
             {logged &&
             <DrawerItem style={
-            {backgroundColor: '#FAF3E0',
+            {backgroundColor: '#BC18E5',
                 }
             }
             label="Sign Out"
